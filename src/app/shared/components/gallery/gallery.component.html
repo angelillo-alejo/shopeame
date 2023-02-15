@@ -1,1 +1,30 @@
-<p>gallery works!</p>
+<form [formGroup]="creationform" (ngSubmit)="onSubmit()">
+
+<fieldset>
+    <label>Nombre del producto:</label>
+    <input formControlName="name" placeholder="name">
+</fieldset>
+
+<fieldset>
+    <label>Precio:</label>
+    <input formControlName="price" placeholder="price">
+</fieldset>
+
+<fieldset>
+    <label>Descripción:</label>
+    <input formControlName="description" placeholder="description">
+</fieldset>
+    
+<fieldset>
+    <label>Ruta de la imagen:</label>
+    <input formControlName="image" placeholder="image">
+</fieldset> 
+
+<fieldset>
+    <label>Opiniones:</label>
+    <input formControlName="stars" placeholder="stars">
+</fieldset>
+
+    <button type="submit">Guardar</button>
+
+</form>

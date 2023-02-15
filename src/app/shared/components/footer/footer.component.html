@@ -1,1 +1,11 @@
-<p>footer works!</p>
+<footer>
+    <h3 class="social">Siguenos en:</h3>
+    <div class="social__div">
+        <ul class="social__redes">
+        <li *ngFor="let socialF of socialFooter">
+            <p>{{socialF}}</p>
+        </li>
+    </ul>
+    </div>
+    <p class="copy">Copyright Shopéame © {{years}}</p>
+</footer>
